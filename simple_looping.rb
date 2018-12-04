@@ -2,6 +2,15 @@
 
 def loop_iterator(number_of_times)
   # Code your solution here using the "loop" keyword to puts out the below phrase
+    counter = 0
+    loop do
+      counter += 1
+      puts "Welcome to Flatiron School's Web Development Course!"
+      if counter == 10 
+        break
+      end
+    end
+    
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
   # How can we make sure the loop breaks once it has puts out the phrase the 
@@ -14,6 +23,9 @@ end
 
 def times_iterator(number_of_times)
   # code your solution here using the "times" keyword
+  number_of_times.times do 
+    puts "Welcome to Flatiron School's Web Development Course!"
+    end
   phrase = "Welcome to Flatiron School's Web Development Course!"
   
 end
@@ -21,6 +33,11 @@ end
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
+  counter = 0 
+  while counter < number_of_times
+  puts "Welcome to Flatiron School's Web Development Course!"
+  counter += 1
+  end
   phrase = "Welcome to Flatiron School's Web Development Course!"
   
 end
@@ -28,6 +45,11 @@ end
 def until_iterator(number_of_times)
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
+  counter = 0 
+  until counter == number_of_times
+  puts "Welcome to Flatiron School's Web Development Course!"
+  counter += 1
+  end
   phrase = "Welcome to Flatiron School's Web Development Course!"
 
 end
